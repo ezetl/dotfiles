@@ -1,6 +1,8 @@
 " Set true color
 set termguicolors
+" Show relative lines. Also, show actual line number in the cursor line
 set relativenumber
+set number
 " Set global replacement
 set gdefault
 " Break long lines and set j,k navigation to take that into account
@@ -48,3 +50,6 @@ map <F3> :NERDTreeToggle<CR>
 nmap ,t :NERDTreeFind<CR>
 " don;t show these file types
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+
+set inccommand=split
+filetype plugin indent on
