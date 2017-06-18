@@ -1,2 +1,3 @@
-# dotfiles
-all my dot files 
+# my dot files 
+Includes dot files from:
+- neovim
