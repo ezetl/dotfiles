@@ -23,13 +23,17 @@ augroup END
 " PLUGINS
 " Directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'euclio/vim-markdown-composer' " markdown visualizer
-Plug 'junegunn/fzf.vim'             " fuzzy finder
-Plug 'morhetz/gruvbox'              " color
-Plug 'mhinz/vim-signify'            " cool diffs
-Plug 'janko-m/vim-test'             " run tests from nvim
-Plug 'hardenedapple/vsh'            " awesome terminal inside nvim
-Plug 'scrooloose/nerdtree'          " tree explorer
+Plug 'euclio/vim-markdown-composer'        " Markdown visualizer - 
+                                           " This one requires Rust + cargo installed in your system. 
+                                           " Read https://github.com/euclio/vim-markdown-composer#installation for installation instructions
+Plug 'junegunn/fzf.vim'                    " Fuzzy finder
+Plug 'morhetz/gruvbox'                     " Color
+Plug 'mhinz/vim-signify'                   " Cool diffs
+Plug 'janko-m/vim-test'                    " Run tests from nvim
+Plug 'hardenedapple/vsh'                   " Awesome terminal inside nvim
+Plug 'scrooloose/nerdtree'                 " Tree explorer
+Plug 'editorconfig/editorconfig-vim'       " EditorConfig Support
+Plug 'w0rp/ale'                            " Asynchronous Linter
 " Initialize plugin system
 call plug#end()
 
@@ -53,3 +57,5 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
 set inccommand=split
 filetype plugin indent on
+
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
